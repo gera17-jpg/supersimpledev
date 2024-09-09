@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=   , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="players'choice">
+        <h2>Player's Choice</h2>
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissors">Scissors</button><br><br>
+    </div>
+    <div>
+        <h2>Result</h2>
+        <label for="com">Com</label>
+        <input type="number" name="com" class="com">
+        <label for="player">Player</label>
+        <input type="number" name="player" class="player">
+    </div>
+    <div>
+        <h2>Score Board</h2>
+        <label for="human">Player</label>
+        <input type="text" class="human">
+        <label for="computer">Com</label>
+        <input type="text" class="comMove">
+    </div>
+    <br><br><br>
+    <a href="index.html">Back to Homepage</a>
+    <script>
+        let rock = document.getElementsByClassName("rock")[0];
+        let paper =document.getElementsByClassName("paper")[0];
+        let scissors = document.getElementsByClassName("scissors")[0];
+        let com = document.getElementsByClassName("com")[0].value;
+        let player = document.getElementsByClassName("player")[0].value;
+        let comMove;
+        let random = Math.floor(Math.random()*3);
+
+        function playersChoice(){
+            if(rock === )
+        }
+        function rps(){
+
+            switch (random){
+                case 0:
+                    comMove = "Rock";
+                    break;
+                case 1:
+                    comMove = "Paper";
+                    break;
+                case 2:
+                    comMove = "Scissors";
+                    break;
+                default:
+                    comMove.value = "Error";
+            }
+        }
+
+        function playerMove(){
+            if(){
+                
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded",function(){})
+    </script>    
+</body>
+</html>

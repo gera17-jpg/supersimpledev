@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p>Youtube Subscribe Button</p>
+    <button class="sbtn">Subscribe</button>
+    <br><br>
+    <br><br>
+    <p>Rock ,Paper, Scissors</p>
+    <a href="rps.html">Click Here</a>
+    <br><br>
+    <br><br>
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping</p>
+    <p>Orders over $40 = Free shipping</p>
+    <input type="number" class="input">
+    <button class="calculate">Calculate</button>
+    <p class="result"></p>
+
+
+
+    <script>
+        function subscribed(){
+            let subs=document.getElementsByClassName("sbtn")[0];
+            if(subs.innerHTML ==="Subscribe"){
+                subs.innerHTML = "Subscribed";
+            }else{
+                subs.innerHTML = "Subscribe";
+            }
+        }
+       
+        function calculate(){
+            let value = parseFloat(document.querySelector(".input").value); 
+            let result = document.querySelector(".result");
+
+            if(value < 40){
+                result.innerHTML = value+10;
+            }else{
+                result.innerHTML = value;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded",function(){
+            document.getElementsByClassName("sbtn")[0].addEventListener("click",subscribed);
+        
+            document.querySelector(".calculate").addEventListener("click",calculate);
+        })
+        
+    </script>
+</body>
+</html>
